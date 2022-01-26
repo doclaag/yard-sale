@@ -14,6 +14,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
+  justify-items: center;
 }
 
 .logo {
@@ -36,6 +37,34 @@ body {
   margin-top: 0;
   margin-bottom: 32px;
   text-align: center;
+}
+
+.email-image {
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--text-input-field);
+  display: flex;
+  height: 132px;
+  justify-content: center;
+  margin-bottom: 24px;
+  width: 132px;
+}
+
+.email-image img {
+  width: 80px;
+}
+
+.resend {
+  font-size: var(--sm);
+}
+
+.resend span {
+  color: var(--very-light-pink);
+}
+
+.resend a {
+  color: var(--hospital-green);
+  text-decoration: none;
 }
 
 .form {
@@ -76,6 +105,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* ----- ----- PSEUDO CLASS ----- ----- */
 :root {
   --white: #ffffff;
   --blac: #000000;
@@ -87,6 +117,7 @@ body {
   --lg: 18px;
 }
 
+/* ----- ----- MEDIA QUERIE ----- ----- */
 @media (max-width: 640px) {
   .logo {
     display: block;
