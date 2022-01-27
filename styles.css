@@ -30,6 +30,11 @@ body {
   text-align: center;
 }
 
+.title-start {
+  font-size: var(--lg);
+  margin-bottom: 36px;
+  text-align: start;
+}
 .subtitle {
   color: var(--very-light-pink);
   font-size: var(--md);
@@ -72,6 +77,11 @@ body {
   flex-direction: column;
 }
 
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
 .label {
   font-size: var(--sm);
   font-weight: bold;
@@ -88,7 +98,20 @@ body {
   margin-bottom: 12px;
 }
 
+.create {
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.input-name {
+  margin-bottom: 22px;
+}
+
 .input-email {
+  margin-bottom: 22px;
+}
+
+.input-password {
   margin-bottom: 22px;
 }
 
@@ -152,5 +175,13 @@ body {
     position: absolute;
     bottom: 0;
     margin-bottom: 24px;
+  }
+
+  .form-container {
+    height: 100%;
+  }
+  .form {
+    height: 100%;
+    justify-content: space-between;
   }
 }
