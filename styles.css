@@ -152,6 +152,12 @@ body {
   margin-bottom: 30px;
 }
 
+.value {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin: 8px 0px 32px 0px;
+}
+
 /* ----- ----- PSEUDO CLASS ----- ----- */
 :root {
   --white: #ffffff;
