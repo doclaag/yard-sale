@@ -290,6 +290,19 @@ body {
   margin-bottom: 36px;
   text-align: start;
 }
+.title-shopping {
+  font-size: var(--lg);
+  font-weight: bold;
+}
+
+.title-container {
+  display: flex;
+}
+
+.title-container img {
+  transform: rotate(180deg);
+  margin-right: 14px;
+}
 .subtitle {
   color: var(--very-light-pink);
   font-size: var(--md);
@@ -512,5 +525,6 @@ body {
     padding-bottom: 24px;
     position: absolute;
     right: 0;
+    box-sizing: border-box;
   }
 }
