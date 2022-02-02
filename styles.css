@@ -3,6 +3,12 @@ body {
   margin: 0;
 }
 
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .login {
   width: 100%;
   height: 100vh;
@@ -164,6 +170,63 @@ body {
 .order p:nth-child(2) {
   text-align: end;
   font-weight: bold;
+}
+
+.product-detail {
+  width: 360px;
+  padding-bottom: 24px;
+  position: absolute;
+  right: 0;
+}
+
+.product-detail-close {
+  background: var(--white);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.product-detail-close:hover {
+  cursor: pointer;
+}
+
+.product-detail > img:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+
+.product-information {
+  margin: 24px 24px 0 24px;
+}
+
+.product-information p:nth-child(1) {
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.product-information p:nth-child(2) {
+  color: var(--very-light-pink);
+  font-weight: bold;
+  font-size: var(--md);
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.product-information p:nth-child(3) {
+  color: var(--very-light-pink);
+  font-weight: bold;
+  font-size: var(--sm);
+  margin-top: 0;
+  margin-bottom: 36px;
 }
 
 .my-orders {
@@ -442,5 +505,12 @@ body {
   .product-card img {
     width: 140px;
     height: 140px;
+  }
+
+  .product-detail {
+    width: 100%;
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
   }
 }
